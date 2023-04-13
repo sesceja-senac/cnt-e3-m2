@@ -1,0 +1,76 @@
+/*paginação*/
+footer li.active a {
+    color: #fff;
+    background-color: #00838D;
+}
+.pagination .active {
+    transform: translateY(-8px);
+    pointer-events:none;
+}
+footer a:visited {
+    color: #7a7a7a;
+    background-color: #c4c4c4;
+}
+
+/*tooltip*/
+.bt-tooltip{
+    border: none;
+    border-bottom: 2px dashed;
+    background: unset;
+    padding: 0;
+}
+
+/*saiba mais*/
+.caixa-container {
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+.caixa-exp {
+    max-height: 200px;
+    overflow: hidden;
+    width: 100%;
+    margin: 40px auto;
+    transition-duration: .7s;
+    position: relative;
+    background-color: #2d5054;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding-top: 60px;
+    box-shadow: 2px 2px 4px black;
+}
+.caixa-exp.aberta {
+    max-height: 1900px; 
+}
+.caixa-container button {
+    content: '';
+    background-image: url('../img/ico_saibamais_abre.png');
+    background-size: contain;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    background-color: transparent;
+    border: none;
+}
+.caixa-container button:hover {
+    transform: translateX(-50%) scale(1.03);
+}
+.caixa-container.saiba-mais::before {
+    content: '';
+    background-image: url('../img/ico_saiba_mais.png');
+    background-size: 100%;
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+}
+
