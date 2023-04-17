@@ -1,3 +1,21 @@
+@font-face {
+    font-family: blackOps;
+    src: url("../fonts/BlackOpsOne-Regular.ttf");
+}
+
+h2, h3, h4, h5{
+    font-family: blackOps;
+    color: #000;
+}
+h3{
+    margin-top: 0;
+    font-size: 30px;
+}
+.container{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 /*paginação*/
 footer li.active a {
     color: #fff;
@@ -33,12 +51,10 @@ footer a:visited {
     margin: 40px auto;
     transition-duration: .7s;
     position: relative;
-    background-color: #2d5054;
     color: white;
     border: none;
     border-radius: 20px;
     padding-top: 60px;
-    box-shadow: 2px 2px 4px black;
 }
 .caixa-exp.aberta {
     max-height: 1900px; 
@@ -74,3 +90,202 @@ footer a:visited {
     z-index: 15;
 }
 
+.container.branco, .bloco .container.branco{background: #fff;}
+.container.verde, .bloco .container.verde{background: #055459;}
+.container.azul, .bloco .container.azul{background: #018087;}
+
+.container.verde p, .container.verde li,
+.container.verde h3, .container.verde button,
+.container.azul p, .container.azul li, .container.azul h3, 
+.container.azul button{color: #fff;}
+
+.container.branco{padding: 50px 40px;}
+.container.azul{padding: 50px 40px;}
+.container.verde{padding: 50px 40px;}
+
+.pg1{
+    background: rgb(174,242,245);
+    background: linear-gradient(180deg, rgba(174,242,245,1) 0%, rgba(0,79,84,1) 100%);
+}
+.pagina{
+    padding: 90px 0;
+}
+#booklet{position: relative;}
+.titulo-conteudo .container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+footer .pagination{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+footer.container{background: unset;}
+.container.verde .figure-caption{color: #fff;}
+p, figcaption{word-wrap: break-word;}
+
+
+/*página 1*/
+.pg1 .bloco1{
+    background: url('../img/pg1/fundo2.png') bottom center, url('../img/pg1/fundo1.png') top 10px center;
+    background-repeat: no-repeat;
+    background-size: 100%, contain;
+}
+.pg1 .bloco2{
+    background: url('../img/pg1/img_hospital.png') top 50px center, url('../img/pg1/img_3.png') top 800px center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+.destaque{
+    padding: 43px 0;
+    max-width: 540px;
+    margin: auto;
+    position: relative;
+}
+.destaque.grande{max-width: unset;}
+.destaque.grande .conteudo-destaque{
+    background: url('../img/pg1/destaque_gd_meio.png') repeat-y;
+    background-size: 100%;
+    padding: 0 70px;
+}
+.conteudo-destaque{
+    background: url('../img/pg1/destaque_meio.png') repeat-y;
+    background-size: 100%;
+    padding: 0 30px;
+    margin: -5px 0;
+}
+.conteudo-destaque ul, .conteudo-destaque p{
+    margin-bottom: unset;
+    color: #fff;
+}
+ul.check{
+    list-style: none;
+}
+ul.check li{
+    background: url('../img/pg1/destaque_marcador.png') no-repeat left top;
+    padding-left: 30px;
+    min-height: 24px;
+    margin-bottom: 5px;
+}
+.pra-fora1 {
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+.pra-fora1 figure{
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.pra-fora1 .destaque{
+    margin-right: -100px;
+}
+
+.box-azul{
+    background: #01a7b3;
+    max-width: 410px;
+    margin-bottom: 20px;
+}
+
+.pg1 .caixa-container.saiba-mais{
+    margin: 50px -70px;
+}
+
+/*página 2*/
+.pg2{
+    background: rgb(255,255,255);
+    background: linear-gradient(-180deg, rgba(255,255,255,1) 0%, rgba(0,167,179,1) 100%);
+}
+.pg2 .bloco1{
+    background: url('../img/pg2/bg_mortalidade.png') bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.pg2 .menu{
+    padding-top: 30px;
+    margin: 0 -30px;
+}
+.pg2 .menu li a{
+    width: 180px;
+    height: 50px;
+    background-size: 100%;
+}
+.nav-link1{background: url('../img/pg2/bt1_ancora.png') no-repeat;}
+.nav-link2{background: url('../img/pg2/bt2_ancora.png') no-repeat;}
+.nav-link3{background: url('../img/pg2/bt3_ancora.png') no-repeat;}
+.nav-link4{background: url('../img/pg2/bt4_ancora.png') no-repeat;}
+.nav-link1:hover{background: url('../img/pg2/bt1_hover_ancora.png') no-repeat;}
+.nav-link2:hover{background: url('../img/pg2/bt2_hover_ancora.png') no-repeat;}
+.nav-link3:hover{background: url('../img/pg2/bt3_hover_ancora.png') no-repeat;}
+.nav-link4:hover{background: url('../img/pg2/bt4_hover_ancora.png') no-repeat;}
+
+
+
+.pg2 .bloco2{
+    background: url('../img/pg2/bg_saneamento.png') top 100px center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.pg2 .bloco3{
+    background: url('../img/pg2/bg_sanemamento2.png') bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.pg2 .bloco4{
+    background: url('../img/pg2/bg_saneamento_dir.png') right top, url('../img/pg2/bg_saneamento_esq.png') left bottom, url('../img/pg2/bg_saneamento3.png') center bottom;
+    background-repeat: no-repeat;
+    background-size: 20%, 20%, 100%;
+}
+.pg2 .bloco5{
+    background: url('../img/pg2/bg_remedio_esq.png') top 30px left, url('../img/pg2/bg_remedios_dir.png') bottom right;
+    background-repeat: no-repeat;
+    background-size: 15%;
+}
+.pg2 .destaque.icone{margin-top: 70px;}
+.pg2 .destaque.icone.saiba-mais::before {
+    background: url(../img/ico_saiba_mais.png) no-repeat transparent;
+    width: 152px;
+    height: 157px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -60px;
+}
+.pg2 .bloco6{
+    background: url('../img/pg2/gradiente_branco.png') top center, url('../img/pg2/bg_vacina_dir.png') right top 100px, 
+    url('../img/pg2/bg_vacina_esq.png') left center, url('../img/pg2/bg_vacina_esq2.png') left bottom, url('../img/pg2/bg_vacina_dir2.png') right bottom;
+    background-repeat: no-repeat;
+    background-size: 100%, 15%, 15%, 18%, 15%;
+}
+.pg2 .voltar-topo{
+    transition: all .4s;
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    z-index: 2;
+}
+.pg2 .voltar-topo:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 780px){
+    .pra-fora1, .pra-fora1 figure{
+        margin-top: 30px;
+        margin-bottom: unset;
+        margin-left: auto;
+    }
+    .pra-fora1 .destaque{margin-right: auto;}
+    footer.container{
+        background:#055459;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .w-50{
+        width: 100% !important;
+    }
+}
