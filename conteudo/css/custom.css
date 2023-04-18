@@ -191,6 +191,12 @@ ul.check li{
     margin-bottom: 20px;
 }
 
+.img-flutuante{animation: flutua infinite 2s ease-in-out;}
+
+@keyframes flutua {
+    50% { transform: translateY(30px) }
+}
+
 .pg1 .caixa-container.saiba-mais{
     margin: 50px -70px;
 }
@@ -223,8 +229,6 @@ ul.check li{
 .nav-link3:hover{background: url('../img/pg2/bt3_hover_ancora.png') no-repeat;}
 .nav-link4:hover{background: url('../img/pg2/bt4_hover_ancora.png') no-repeat;}
 
-
-
 .pg2 .bloco2{
     background: url('../img/pg2/bg_saneamento.png') top 100px center;
     background-repeat: no-repeat;
@@ -240,10 +244,17 @@ ul.check li{
     background-repeat: no-repeat;
     background-size: 20%, 20%, 100%;
 }
-.pg2 .bloco5{
-    background: url('../img/pg2/bg_remedio_esq.png') top 30px left, url('../img/pg2/bg_remedios_dir.png') bottom right;
-    background-repeat: no-repeat;
-    background-size: 15%;
+.pg2 .bloco5 .remedios{
+    position: absolute;
+    width: 15%;
+    top: 50px;
+}
+.pg2 .bloco5 .remedios.direita{
+    right: 0;
+}
+.pg2 .bloco5 .remedios.direita.inferior{
+    top: unset;
+    bottom: 50px;
 }
 .pg2 .destaque.icone{margin-top: 70px;}
 .pg2 .destaque.icone.saiba-mais::before {
@@ -271,6 +282,15 @@ ul.check li{
 .pg2 .voltar-topo:hover{
     transform: scale(1.1);
 }
+.pg2 .card-peq{
+    width: 337px;
+    height: 155px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 20px;
+}
+.pg2 .card-peq.bg1{background: url('../img/pg2/quadro2.png') no-repeat;}
+.pg2 .card-peq.bg2{background: url('../img/pg2/quadro1.png') no-repeat;}
 
 @media screen and (max-width: 780px){
     .pra-fora1, .pra-fora1 figure{
