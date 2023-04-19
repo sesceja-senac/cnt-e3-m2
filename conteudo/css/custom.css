@@ -96,7 +96,7 @@ footer a:visited {
 
 .container.verde p, .container.verde li,
 .container.verde h3, .container.verde button,
-.container.azul p, .container.azul li, .container.azul h3, 
+.container.azul p, .container.azul li, .container.azul h3, .container.azul h4,
 .container.azul button{color: #fff;}
 
 .container.branco{padding: 50px 40px;}
@@ -107,29 +107,30 @@ footer a:visited {
     background: rgb(174,242,245);
     background: linear-gradient(180deg, rgba(174,242,245,1) 0%, rgba(0,79,84,1) 100%);
 }
-.pagina{
-    padding: 90px 0;
-}
-#booklet{position: relative;}
-.titulo-conteudo .container{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-footer .pagination{
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 0;
-}
 
-footer.container{background: unset;}
+.pagina{padding-bottom: 100px;}
+.pagina .bloco1{padding-top: 130px;}
+#booklet{position: relative;}
+
+header.titulo-conteudo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    top: 40px;
+}
+footer.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    bottom: 0;
+    background: transparent;
+}
 .container.verde .figure-caption{color: #fff;}
 p, figcaption{word-wrap: break-word;}
-
 
 /*página 1*/
 .pg1 .bloco1{
@@ -191,7 +192,17 @@ ul.check li{
     margin-bottom: 20px;
 }
 
-.img-flutuante{animation: flutua infinite 2s ease-in-out;}
+.img-flutuante{
+    animation: flutua infinite 2s ease-in-out;
+    position: absolute;
+    width: 15%;
+    top: 50px;
+}
+.img-flutuante.direita{right: 0;}
+.img-flutuante.inferior{
+    top: unset;
+    bottom: 50px;
+}
 
 @keyframes flutua {
     50% { transform: translateY(30px) }
@@ -244,18 +255,6 @@ ul.check li{
     background-repeat: no-repeat;
     background-size: 20%, 20%, 100%;
 }
-.pg2 .bloco5 .remedios{
-    position: absolute;
-    width: 15%;
-    top: 50px;
-}
-.pg2 .bloco5 .remedios.direita{
-    right: 0;
-}
-.pg2 .bloco5 .remedios.direita.inferior{
-    top: unset;
-    bottom: 50px;
-}
 .pg2 .destaque.icone{margin-top: 70px;}
 .pg2 .destaque.icone.saiba-mais::before {
     background: url(../img/ico_saiba_mais.png) no-repeat transparent;
@@ -275,7 +274,7 @@ ul.check li{
 .pg2 .voltar-topo{
     transition: all .4s;
     position: fixed;
-    top: 20%;
+    top: 30%;
     left: 5%;
     z-index: 2;
 }
@@ -291,6 +290,34 @@ ul.check li{
 }
 .pg2 .card-peq.bg1{background: url('../img/pg2/quadro2.png') no-repeat;}
 .pg2 .card-peq.bg2{background: url('../img/pg2/quadro1.png') no-repeat;}
+
+
+/*página 3*/
+.pg3{background: #000;}
+.pg3 .bloco1{
+    background: rgb(1,165,175);
+    background: linear-gradient(180deg, rgba(1,165,175,1) 0%, rgba(0,0,0,1) 100%);
+    position: relative;
+}
+.pg3 .bloco2{
+    background: url('../img/pg3/bg_img2_dir.png') right top, url('../img/pg3/bg_img3_esq.png') left center, url('../img/pg3/bg_img4_dir.png') right bottom;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+.pg3 .bloco3{
+    background: url('../img/pg3/bg_radioterapia.png') no-repeat;
+    background-size: 100%;
+}
+.pg3 .bloco4{
+    background: rgb(1,165,175);
+    background: linear-gradient(180deg, rgba(1,165,175,1) 0%, rgba(0,0,0,1) 100%);
+}
+.pg3 .caixa-container.saiba-mais {
+    margin: 50px -70px;
+    margin-bottom: 0;
+}
+.pg3 .caixa-container.saiba-mais .destaque{padding-bottom: 0;}
+.pg3 .bloco2 .container{padding-bottom: 0;}
 
 @media screen and (max-width: 780px){
     .pra-fora1, .pra-fora1 figure{
