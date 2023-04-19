@@ -192,6 +192,7 @@ ul.check li{
     margin-bottom: 20px;
 }
 
+/*imagens animadas*/
 .img-flutuante{
     animation: flutua infinite 2s ease-in-out;
     position: absolute;
@@ -207,6 +208,11 @@ ul.check li{
 @keyframes flutua {
     50% { transform: translateY(30px) }
 }
+
+.rotate-center{animation:rotate-center 60s linear infinite both}
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+/* /imagens animadas*/
 
 .pg1 .caixa-container.saiba-mais{
     margin: 50px -70px;
@@ -318,6 +324,30 @@ ul.check li{
 }
 .pg3 .caixa-container.saiba-mais .destaque{padding-bottom: 0;}
 .pg3 .bloco2 .container{padding-bottom: 0;}
+
+/*página 4*/
+.pg4{
+    background: rgb(255,255,255);
+    background: linear-gradient(-180deg, rgba(255,255,255,1) 0%, rgba(234,148,45,1) 100%);
+}
+.pg4 .bloco1{
+    background: url('../img/pg4/bg1_esq.png') left top 30px, url('../img/pg4/bg1_dir.png') right top 100px, url('../img/pg4/bg2_esq.png') left center,
+    url('../img/pg4/Bg2_dir.png') right center;
+    background-repeat: no-repeat;
+    background-size: 15% , 15%, 20%, 20%;
+}
+.pg4 .planeta{
+    width: 30%;
+    position: absolute;
+    bottom: 100px;
+    z-index: 1;
+}
+.pg4 .bloco1 .container{
+    position: relative;
+    z-index: 2;
+}
+.pg4 .planeta.esq{left: 100px;}
+.pg4 .planeta.dir{right: 100px;}
 
 @media screen and (max-width: 780px){
     .pra-fora1, .pra-fora1 figure{
