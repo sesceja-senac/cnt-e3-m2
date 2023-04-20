@@ -1,0 +1,35 @@
+body{
+    background: url('../img/bg.png') no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+.bt-conteudo{
+    background: url('../img/bt.png') no-repeat;
+    width: 757px;
+    height: 382px;
+    display: block;
+    margin: 30px auto;
+    animation-delay: .8s;
+}
+.animate__bounceInDown{
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 1400px){
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 780px){
+    body{
+        background: url('../img/bg_mobile.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .bt-conteudo, .img-titulo{
+        max-width: 100%;
+        background-size: 100%;
+
+    }
+}

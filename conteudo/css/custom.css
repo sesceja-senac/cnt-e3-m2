@@ -90,6 +90,11 @@ footer a:visited {
     z-index: 15;
 }
 
+.tt-destaque{
+    font-family: blackOps;
+    font-size: 22px;
+}
+
 .container.branco, .bloco .container.branco{background: #fff;}
 .container.verde, .bloco .container.verde{background: #055459;}
 .container.azul, .bloco .container.azul{background: #018087;}
