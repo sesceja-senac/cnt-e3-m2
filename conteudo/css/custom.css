@@ -447,16 +447,29 @@ ul.check li{
 .pg5{
     background: rgb(133,229,229);
 }
-
-
-.pg5 .bloco1{
-    background: url('../img/pg5/painel.png') left top 50px, url('../img/pg5/esq.png') left bottom, url('../img/pg5/dir.png') right bottom; 
-    background-repeat: no-repeat;
-    position: relative;
-    
+.pg5 img{
+    position: fixed;
+    width: 15%;
+    z-index: 3;
+}
+.pg5 .img-painel{
+    top: 100px;
+    left: 80px;
+}
+.pg5 .img-dir{
+    bottom: 0;
+    right: 80px;
+}
+.pg5 .img-esq{
+    bottom: 0;
+    left: 80px;
+}
+@media screen and (max-width: 1480px){
+    .pg5 img{position: absolute;}
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 1024px){
+    .conteudo-destaque{margin: -7px 0;}
     .pra-fora1, .pra-fora1 figure{
         margin-top: 30px;
         margin-bottom: unset;
@@ -469,6 +482,17 @@ ul.check li{
     .pg3 .painel-ondas{
         transform: scale(0.9);
         margin: 30px -50px !important;
+    }
+    .pg5 img, .img-flutuante{display: none;}
+    .pg2 .bloco1 .container{padding-top: 0;}
+    .pg1 .caixa-container.saiba-mais,
+    .pg3 .caixa-container.saiba-mais{
+        margin: unset;
+        margin-bottom: 60px;
+    }
+    .destaque.grande .conteudo-destaque{padding: 0 30px;}
+    .pg3 .bloco2 .destaque.grande .conteudo-destaque{
+        padding-top: 50px;
     }
 }
 

@@ -5,8 +5,8 @@ body{
 }
 .bt-conteudo{
     background: url('../img/bt.png') no-repeat;
-    width: 757px;
-    height: 382px;
+    width: 402px;
+    height: 143px;
     display: block;
     margin: 30px auto;
     animation-delay: .8s;
@@ -27,9 +27,13 @@ body{
         background-size: cover;
         background-position: center;
     }
-    .bt-conteudo, .img-titulo{
+    .img-titulo{
         max-width: 100%;
         background-size: 100%;
-
+    }
+    .bt-conteudo{
+        max-width: 60%;
+        background-size: 100%;
+        margin-top: 100px;  
     }
 }
