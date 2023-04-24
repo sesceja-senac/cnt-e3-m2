@@ -101,8 +101,9 @@ footer a:visited {
 
 .container.verde p, .container.verde li,
 .container.verde h3, .container.verde button,
+.container.verde .figure-caption,
 .container.azul p, .container.azul li, .container.azul h3, .container.azul h4,
-.container.azul button{color: #fff;}
+.container.azul .figure-caption, .container.azul button{color: #fff;}
 
 .container.branco{padding: 50px 40px;}
 .container.azul{padding: 50px 40px;}
@@ -223,6 +224,48 @@ ul.check li{
     margin: 50px -70px;
 }
 
+/*flip-cards*/
+.flip-card {
+    background-color: transparent;
+    width: 231px;
+    height: 231px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.modal-header h5, .conteudo-destaque .figure-caption {color: #fff;}
+
+.icone.praticar::before{
+    background: url('../img/ico_praticar.png') no-repeat;
+    width: 115px;
+    height: 128px;
+    top: 25px;
+    z-index: 1;
+}
+
 /*página 2*/
 .pg2{
     background: rgb(255,255,255);
@@ -233,6 +276,7 @@ ul.check li{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+.pg2 .bloco3{margin-top: -10px;}
 .pg2 .menu{
     padding-top: 30px;
     margin: 0 -30px;
@@ -329,6 +373,50 @@ ul.check li{
 }
 .pg3 .caixa-container.saiba-mais .destaque{padding-bottom: 0;}
 .pg3 .bloco2 .container{padding-bottom: 0;}
+.pg3 .painel-ondas{
+    background: url('../img/pg3/figura14.gif') no-repeat;
+    width: 800px;
+    height: 360px;
+    background-size: 100%;
+    position: relative;
+}
+.pg3 .painel-ondas button{
+    width: 175px;
+    height: 78px;
+    background-position: center;
+    transition: all .4s;
+    border: none;
+    position: absolute;
+    transform: scale(.7);
+}
+.pg3 .painel-ondas button:hover{
+    transform: scale(.8);
+}
+.bt-alfa{
+    background: url('../img/pg3/radiacao_bt1.png') no-repeat;
+    left: 200px;
+    top: 30px;
+}
+.bt-beta{
+    background: url('../img/pg3/radiacao_bt2.png') no-repeat;
+    left: 200px;
+    top: 85px;
+}
+.bt-raiox{
+    background: url('../img/pg3/radiacao_bt3.png') no-repeat;
+    left: 200px;
+    top: 136px;
+}
+.bt-gama{
+    background: url('../img/pg3/radiacao_bt4.png') no-repeat;
+    left: 200px;
+    top: 190px;
+}
+.bt-neutron{
+    background: url('../img/pg3/radiacao_bt5.png') no-repeat;
+    left: 200px;
+    top: 245px;
+}
 
 /*página 4*/
 .pg4{
@@ -363,6 +451,10 @@ ul.check li{
     .pra-fora1 .destaque{margin-right: auto;}
     footer.container{
         background:#055459;
+    }
+    .pg3 .painel-ondas{
+        transform: scale(0.9);
+        margin: 30px -50px !important;
     }
 }
 
