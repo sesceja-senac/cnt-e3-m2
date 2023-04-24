@@ -442,6 +442,20 @@ ul.check li{
 .pg4 .planeta.esq{left: 100px;}
 .pg4 .planeta.dir{right: 100px;}
 
+/*página 5*/
+
+.pg5{
+    background: rgb(133,229,229);
+}
+
+
+.pg5 .bloco1{
+    background: url('../img/pg5/painel.png') left top 50px, url('../img/pg5/esq.png') left bottom, url('../img/pg5/dir.png') right bottom; 
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
 @media screen and (max-width: 780px){
     .pra-fora1, .pra-fora1 figure{
         margin-top: 30px;
