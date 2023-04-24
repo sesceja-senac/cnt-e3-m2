@@ -360,8 +360,12 @@ ul.check li{
     background: rgb(133,229,229);
 }
 
-.pg5 .bloco1 {
-    background: url('') left top 30px, 
+
+.pg5 .bloco1{
+    background: url('../img/pg5/painel.png') left top 50px, url('../img/pg5/esq.png') left bottom, url('../img/pg5/dir.png') right bottom; 
+    background-repeat: no-repeat;
+    position: relative;
+    
 }
 
 @media screen and (max-width: 780px){
