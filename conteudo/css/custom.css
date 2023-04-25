@@ -346,6 +346,24 @@ ul.check li{
 .pg2 .card-peq.bg1{background: url('../img/pg2/quadro2.png') no-repeat;}
 .pg2 .card-peq.bg2{background: url('../img/pg2/quadro1.png') no-repeat;}
 
+.pg2 .bloco6 .icone.praticar::before{
+    top: 0px;
+    left: -42px;
+}
+.pg2 .bloco6 .icone.praticar p{color: #fff;}
+.destaque .esquemaDaBru .btn-sesc{
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    width: 100px;
+}
+    
+.destaque .esquemaDaBru:last-child, .destaque .esquemaDaBru .feedbacks p{margin-bottom: 0;}
+.destaque .esquemaDaBru .feedbacks p{
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
 /*página 3*/
 .pg3{background: #000;}
