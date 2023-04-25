@@ -14,13 +14,60 @@ body{
 .animate__bounceInDown{
     animation-duration: 1s;
 }
+.div-btVideo{
+    width: 280px;
+    bottom: 1%;
+    right: 1%;
+    position: absolute;
+}
+.texto-video{
+    color: #fff;
+    font-size: 20px;
+    line-height: 22px;
+    text-shadow: #007981 3px 2px 0px;
+    font-weight: bold;
+}
+.btVideo{
+    background: url('../img/bt-video.png') no-repeat;
+    width: 128px;
+    height: 127px;
+    border: none;
+    background-size: contain;
+    display: block;
+    margin: 10px auto;
+    transition: all 0.2s;
+}
+.btVideo:hover {
+    transform: scale(1.1);
+}
+.modal-dialog .modal-content{
+    background: url('../img/Video-apresentacao-gd.png') no-repeat center;
+    width: 1133px;
+    height: 708px;
+    border: none;
+    padding: 100px 200px;
+}
+.modal-dialog .modal-content p,
+.btn-close{
+    color: #fff;
+    clear: both;
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 1400px){
     body{
         background-size: cover;
         background-position: center;
     }
+    .modal-dialog .modal-content{
+        background-position: center;
+        width: unset;
+        max-width: 100%;
+        padding: 50px;
+        background: #007981;
+    }
 }
+
 @media screen and (max-width: 780px){
     body{
         background: url('../img/bg_mobile.png') no-repeat;
