@@ -126,6 +126,7 @@
   }
   .pagina figcaption	{
   display: block;	
+  text-align: center;
   }
   .pagina figure	{
   display: block;
@@ -847,5 +848,20 @@ iframe, iframe.youtube-pl{
   display: none;
 }
 
-
-
+.modal-fullscreen .modal-content {
+  height: auto !important;
+}
+th {display: table-cell !important;}
+th, td {border: 1px solid black !important;}
+.bt-tooltip {
+  /* font-weight: bold;
+  color: #e79623; */
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px dashed #333;
+}
+.modal.fade#associar_colulas_acertou1, .modal.fade#associar_colulas_errou1 {
+  display: none !important;
+}

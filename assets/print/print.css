@@ -150,7 +150,7 @@ font-weight: 700;
      }
 
   .no-print, .nao-imprimir{
-      display: none;
+      display: none !important;
   }
   .print, .imprimir{
       display: initial !important;
@@ -387,6 +387,9 @@ p{
   background-color: white !important;
 
 }
-
+figure > a {display: none;}
+.modal-fullscreen .modal-content {
+  height: auto !important;
+}
 
 }
