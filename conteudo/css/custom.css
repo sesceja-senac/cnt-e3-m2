@@ -509,8 +509,7 @@ ul.check li{
 @media screen and (max-width: 1480px){
     .pg5 img{position: absolute;}
 
-    .pg5 .img-painel{
-        top: 100px;
+    .pg5 .img-painel, .pg5 .img-esq{
         left: 30px;
     }
 }
