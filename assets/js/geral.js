@@ -18,3 +18,13 @@ $('.caixa-container button').click(function(){
       $(this).css('background-image', 'url("img/ico_saibamais_fecha.png")')
   }
 })
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 1680) {
+        $('.voltar-topo').css({"display": "block", "transition": "2s"});
+    } else {
+        $('.voltar-topo').css({"display": "none", "transition": "2s"});
+    }
+});
+

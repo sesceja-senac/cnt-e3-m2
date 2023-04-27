@@ -10,6 +10,10 @@ body{
     display: block;
     margin: 30px auto;
     animation-delay: .8s;
+    transition: all 0.2s !important;
+}
+.bt-conteudo:hover{
+    transform: scale(1.06) !important;
 }
 .animate__bounceInDown{
     animation-duration: 1s;

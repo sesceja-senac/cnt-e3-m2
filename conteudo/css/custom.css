@@ -171,6 +171,7 @@ p, figcaption{word-wrap: break-word;}
     margin-bottom: unset;
     color: #fff;
 }
+
 ul.check{
     list-style: none;
 }
@@ -332,6 +333,7 @@ ul.check li{
     top: 30%;
     left: 5%;
     z-index: 2;
+    display: none;
 }
 .pg2 .voltar-topo:hover{
     transform: scale(1.1);
@@ -482,6 +484,12 @@ ul.check li{
     bottom: 0;
     left: 80px;
 }
+
+
+.borda-card{
+    border: #009ca8 solid 8px;
+}
+
 @media screen and (max-width: 1480px){
     .pg5 img{position: absolute;}
 }
@@ -511,6 +519,10 @@ ul.check li{
     .destaque.grande .conteudo-destaque{padding: 0 30px;}
     .pg3 .bloco2 .destaque.grande .conteudo-destaque{
         padding-top: 50px;
+    }
+
+    .conteudo-destaque span, .voltar-topo{
+        display: none !important;
     }
 }
 
