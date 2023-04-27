@@ -21,11 +21,16 @@ div.esquemaDaBru{
     font-weight: initial;
     background-color: white;
 }
-.alt-c.selected,
+.alt-c.selected{
+    transform: none;
+    color: white !important;
+    background-color: #00838D;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
+}
 .alt-e.selected{
     transform: none;
-    color: white;
-    background-color: #00838D;
+    color: white !important;
+    background-color: #9e0f0f;
     box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
 }
 .alt-c.selected:hover, .alt-e.selected:hover{

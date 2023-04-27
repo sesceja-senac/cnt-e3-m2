@@ -865,3 +865,15 @@ th, td {border: 1px solid black !important;}
 .modal.fade#associar_colulas_acertou1, .modal.fade#associar_colulas_errou1 {
   display: none !important;
 }
+
+
+.destaque.w-50{
+  width: 100% !important;
+  background-color: #d3d3d3;
+}
+.card-peq.bg1{
+  margin-right: 10px;
+}
+.card-peq.bg2{
+  margin-left: 10px;
+}
