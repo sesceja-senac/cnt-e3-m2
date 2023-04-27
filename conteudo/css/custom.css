@@ -536,9 +536,9 @@ ul.check li{
         margin: unset;
         margin-bottom: 60px;
     }
-    .destaque.grande .conteudo-destaque{padding: 0 30px;}
+    .destaque.grande .conteudo-destaque{padding: 10px 30px;}
     .pg3 .bloco2 .destaque.grande .conteudo-destaque{
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
     .conteudo-destaque span, .voltar-topo{
@@ -546,8 +546,28 @@ ul.check li{
     }
 }
 
+@media screen and (max-width: 820px){
+    .pagina {
+        padding-bottom: 80px;
+    }
+    .pg1, .pg1 .bloco1, .pg4 .bloco1{
+        background: none;
+    }
+    .pg3 {
+        background: #fff;
+    }
+
+    .destaque{
+        padding-top: 60px;
+    }
+}
+
 @media screen and (max-width: 480px){
     .w-50{
         width: 100% !important;
+    }
+
+    .painel-gaitinha .accordion-button:before{
+        padding: 25px;
     }
 }
