@@ -199,6 +199,18 @@ ul.check li{
     margin-bottom: 20px;
 }
 
+/*imagens remédios*/
+.img-remedios{
+    position: absolute;
+    width: 15%;
+    top: 50px;
+}
+.img-remedios.direita{right: 0;}
+.img-remedios.inferior{
+    top: unset;
+    bottom: 50px;
+}
+
 /*imagens animadas*/
 .img-flutuante{
     animation: flutua infinite 2s ease-in-out;
@@ -207,9 +219,13 @@ ul.check li{
     top: 50px;
 }
 .img-flutuante.direita{right: 0;}
+.img-flutuante.esquerda{left: 0;}
 .img-flutuante.inferior{
     top: unset;
     bottom: 50px;
+}
+.img-flutuante.centro{
+    top: 40%;
 }
 
 @keyframes flutua {
@@ -322,16 +338,16 @@ ul.check li{
     top: -60px;
 }
 .pg2 .bloco6{
-    background: url('../img/pg2/gradiente_branco.png') top center, url('../img/pg2/bg_vacina_dir.png') right top 100px, 
-    url('../img/pg2/bg_vacina_esq.png') left center, url('../img/pg2/bg_vacina_esq2.png') left bottom, url('../img/pg2/bg_vacina_dir2.png') right bottom;
+    background: url('../img/pg2/gradiente_branco.png') top center,
+                url('../img/pg2/bg_vacina_esq2.png') left bottom;
     background-repeat: no-repeat;
-    background-size: 100%, 15%, 15%, 18%, 15%;
+    background-size: 100%, 18%;
 }
 .pg2 .voltar-topo{
-    transition: all .4s;
+    transition: all .4s !important;
     position: fixed;
-    top: 30%;
-    left: 5%;
+    bottom: 10%;
+    left: 15%;
     z-index: 2;
     display: none;
 }
@@ -507,6 +523,9 @@ ul.check li{
 }
 
 @media screen and (max-width: 1480px){
+    .pg2 .voltar-topo{
+        left: 4%;
+    }
     .pg5 img{position: absolute;}
 
     .pg5 .img-painel, .pg5 .img-esq{
