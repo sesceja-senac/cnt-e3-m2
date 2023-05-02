@@ -514,6 +514,13 @@ ul.check li{
     vertical-align: top;
 }
 
+/*-------- CSS Vídeos --------*/
+.video-youtube{
+    width: 640px;
+    height: 360px;
+    display: block;
+    margin: 10px auto;
+}
 .espera-video{
     width: 100%;
     height: 300px;
@@ -521,6 +528,7 @@ ul.check li{
     border-radius: 20px;
     margin: 20px auto;
 }
+
 
 @media screen and (max-width: 1480px){
     .pg2 .voltar-topo{
@@ -588,5 +596,10 @@ ul.check li{
 
     .painel-gaitinha .accordion-button:before{
         padding: 25px;
+    }
+
+    .video-youtube{
+        width: 320px;
+        height: 180px;
     }
 }
