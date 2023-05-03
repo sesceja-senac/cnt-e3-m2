@@ -510,7 +510,7 @@ ul.check li{
     color: #fff;
 }
 .tabela-conteudo td{
-    padding: 10px 0px;
+    padding: 12px;
     vertical-align: top;
 }
 
@@ -534,6 +534,9 @@ ul.check li{
     margin: 20px auto;
 }
 
+.conteudo-mobile p{
+    margin-top: 20px;
+}
 
 @media screen and (max-width: 1480px){
     .pg2 .voltar-topo{
