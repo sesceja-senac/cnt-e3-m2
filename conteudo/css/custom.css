@@ -562,6 +562,28 @@ ul.check li{
     width: 100%;
 }
 
+
+.pagina.pg2.pg2_1{
+    padding-bottom: 0px;
+}
+.pg2_1 .bloco4{
+    padding-bottom: 0px;
+}
+
+.pagina.pg2.pg2_2{
+    padding-top: 40px;
+}
+
+header.titulo-conteudo .container{
+    background-color: transparent !important;
+}
+
+.mb-10{
+    margin-bottom: 5em !important;
+}
+
+
+
 @media screen and (max-width: 1480px){
     .pg2 .voltar-topo{
         left: 4%;
