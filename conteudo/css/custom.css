@@ -539,12 +539,12 @@ ul.check li{
 }
 
 .btn-tratamento_agua{
+    background: url('../img/pg2/bt_processos.png') no-repeat;
     display: block;
     margin: 20px auto;
-    border: #009ca8 solid 2px;
-    width: 200px;
-    height: 80px;
-    border-radius: 10px;
+    width: 233px;
+    height: 77px;
+    transition: all 0.2s;
 }
 .btn-ervilhas{
     display: block;
@@ -553,6 +553,10 @@ ul.check li{
     width: 200px;
     height: 80px;
     border-radius: 10px;
+    transition: all 0.2s;
+}
+.btn-tratamento_agua:hover, .btn-ervilhas:hover{
+    transform: scale(1.1);
 }
 
 .painel-icones{
