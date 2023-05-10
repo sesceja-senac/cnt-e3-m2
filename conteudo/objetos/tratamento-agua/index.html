@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Processos de tratamento para tornar a água potável.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style-isometrico.css">
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    <link rel="stylesheet" href="assets/css/loading-bar.css">
+</head>
+
+<body>
+    <div class="pace-wall">
+        
+    </div>
+    <div class="conteudo">
+        <div class="bg position-relative">
+            <div class="rio position-absolute">
+                <img src="assets/img/rio_01.png" class="img-fluid" alt="">
+            </div>
+            <div class="position-absolute">
+                <img src="assets/img/Cidade.png" alt="Cidade" class="img-fluid">
+            </div>
+            <div class="tanques position-absolute">
+                <img src="assets/img/tanques_01.png" class="img-fluid" alt="">
+            </div>
+
+            
+            <div class="btnPopovers"> 
+                <button type="button" class="btn estilo position-absolute" id="btn-1" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" data-bs-content="Represa"> 
+                    1
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-2" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" title="Captação e bombeamento." data-bs-content="Aqui existem grades que impedem que animais e sujeiras maiores entrem na estação junto com a água coletada."> 
+                    2
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-3" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" title="Pré-cloração, pré-alcalinização e coagulação." data-bs-content="Aqui são adicionadas algumas substâncias que vão ajudar na agregação da sujeira."> 
+                    3
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-4" data-bs-toggle="popover" data-bs-placement="top" data-bs-custom-class="custom-popover" title="Floculação." data-bs-content="Nessa etapa, as partículas de sujeira se juntam, formando flocos."> 
+                    4
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-5" data-bs-toggle="popover" data-bs-placement="top" data-bs-custom-class="custom-popover" title="Decantação." data-bs-content="Os flocos de sujeira ficam depositados no fundo do tanque."> 
+                    5
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-6" data-bs-toggle="popover" data-bs-placement="top" data-bs-custom-class="custom-popover" title="Filtração." data-bs-content="Nessa etapa, a água passa por várias camadas de pedras e areia, que funcionam como filtros."> 
+                    6
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-7" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" title="Cloração e fluoretação." data-bs-content="Aqui são adicionados cloro, para matar os microrganismos, e flúor, para ajudar na prevenção de cáries."> 
+                    7
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-8" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" title="Reservatório." data-bs-content="Aqui fica armazenada a água já tratada."> 
+                    8
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-9" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" title="Adutoras." data-bs-content="Tubulações maiores."> 
+                    9
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-10" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" data-bs-content="Rede de distribuição."> 
+                    10
+                </button>
+                <button type="button" class="btn estilo position-absolute" id="btn-11" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" data-bs-content="Cidade."> 
+                    11
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="intro" tabindex="-1" role="dialog" aria-labelledby="modalIntro" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalIntro">Saiba mais...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>Confira os processos de tratamento para tornar a água potável.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Iniciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- força o usuário a virar a tela do celular -->
+
+    <div class="modo-smart">
+        <div class="text-center">
+            <p class="p-paisagem text-center">
+                <img src="assets/Img/vire.gif" class="img-fluid img-paisagem d-inline-block"><br>
+                <strong>Por favor, gire o aparelho para o modo paisagem.</strong>
+            </p>
+        </div>
+    </div>
+
+    
+    
+    <div id="loading">
+        <img src="assets/img/Cidade.png" alt="">
+        <img src="assets/img/decantacao.png" alt="">
+        <img src="assets/img/filtracao.png" alt="">
+        <img src="assets/img/floculacao.png" alt="">
+        <img src="assets/img/rio_01.png" alt="">
+        <img src="assets/img/rio_02.png" alt="">
+        <img src="assets/img/rio_03.png" alt="">
+        <img src="assets/img/rio_04.png" alt="">
+        <img src="assets/img/rio_05.png" alt="">
+        <img src="assets/img/rio_06.png" alt="">
+        <img src="assets/img/rio_07.png" alt="">
+        <img src="assets/img/rio_08.png" alt="">
+        <img src="assets/img/rio_09.png" alt="">
+        <img src="assets/img/rio_10.png" alt="">
+        <img src="assets/img/tanques_01.png" alt="">
+        <img src="assets/img/tanques_02.png" alt="">
+        <img src="assets/img/tanques_03.png" alt="">
+        <img src="assets/img/tanques_04.png" alt="">
+        <img src="assets/img/tanques_05.png" alt="">
+        <img src="assets/img/tanques_06.png" alt="">
+        <img src="assets/img/tanques_07.png" alt="">
+        <img src="assets/img/tanques_08.png" alt="">
+        <img src="assets/img/tanques_09.png" alt="">
+        <img src="assets/img/tanques_10.png" alt="">
+    </div>
+    
+    
+    <!-- Versao atual do handtalk -->
+
+
+
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+    </script>
+    <script>
+        window.addEventListener("load", AOS.refresh);
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="assets/js/script-isometrico.js"></script>
+</body>
+
+</html>

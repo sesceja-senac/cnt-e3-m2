@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+.conteudoCompleteObjetivo {
+    background-color: #008086;
+}
+
+.objetivoIncompleto {
+    max-width: 650px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: white;
+    box-shadow: 5px 5px 3px black;
+}
+
+.conteudo-header-obj {
+    color: #008086;
+}
+
+.tamBtnObj {
+    width: 200px;
+}
+
+.escolha:hover {
+    filter: opacity(50%);
+    transform: scale(1.1);
+}
+
+.bordinha {
+    border: 2px solid #ff9200;
+    background-color: white;
+}
+
+.btn.disabled {
+    border-color: white !important;
+    opacity: 100% !important;
+}
+
+.headerAcertouObjetivo {
+    background-color: #008086;
+    color: white;
+}
+
+.headerErrouObjetivo {
+    background-color: #ff5757;
+    color: white;
+}
+
+.corzinha {
+    background-color: #008086 !important;
+}
+
+.corzinha:hover {
+    background-color: #ff9200 !important;
+}

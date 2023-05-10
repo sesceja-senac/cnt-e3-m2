@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style-complete-objetivos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>Os 17 Objetivos de Desenvolvimento Sustentável no Brasil</title>
+</head>
+
+<body>
+  <div class="conteudoCompleteObjetivo p-4">
+    <div class="pb-3 objetivoIncompleto rounded-2">
+      <div class="conteudo-header-obj p-2 row align-items-center">
+        <img class="col-3 logo-objetivo" src="assets/img/praticar.png" alt="">
+        <h4 class="col-9"><strong>Teste seus conhecimentos sobre os Objetivos de Desenvolvimento Sustentável no Brasil:</strong><br> escolha a alternativa correta que define a frase!</h4>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-1" class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-1">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-10 col-md-8">
+          <p class="p-4">Até 2030, reduzir a exposição e vulnerabilidade dos povos marginalizados a eventos extremos relacionados com o clima, desastres econômicos, sociais e ambientais.</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-2"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-2">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Até 2030, dobrar a produtividade agrícola e a renda dos pequenos produtores de alimentos, particularmente das mulheres, dos povos indígenas e dos pescadores, inclusive por meio de acesso igual a terra.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-3"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-3">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Apoiar a pesquisa e o desenvolvimento de vacinas e medicamentos para as doenças transmissíveis e não transmissíveis, que afetam principalmente os países em desenvolvimento.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-4"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-4">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Até 2020, ampliar globalmente o número de bolsas de estudo para o ensino superior aos países menos desenvolvidos.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-5"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-5">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Adotar e fortalecer políticas sólidas para a promoção da igualdade de gênero e o empoderamento de todas as mulheres e meninas.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-6"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-6">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Apoiar e fortalecer a participação das comunidades locais, a fim de melhorar a gestão da água e do saneamento.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-7"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-7">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Até 2030, aumentar a participação de energias renováveis na matriz energética global.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-8" class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-8">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Tomar medidas imediatas para erradicar o trabalho forçado, acabar com a escravidão moderna e o tráfico de pessoas e assegurar a proibição e eliminação do trabalho infantil.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-9"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-9">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Fortalecer a pesquisa científica e melhorar as capacidades tecnológicas de setores industriais, particularmente dos países em desenvolvimento.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-10"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-10">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-11"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-11">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Até 2030, garantir o acesso de todos à habitação segura, adequada e a preço acessível, e aos serviços básicos, além de urbanizar as favelas.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-12" class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-12">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Incentivar as empresas grandes e transnacionais a adotarem práticas sustentáveis e a integrarem informações de sustentabilidade em seus relatórios.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-13"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-13">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Mobilizar conjuntamente US$ 100 bilhões por ano, a partir de 2020, de todas as fontes para atender às necessidades dos países em desenvolvimento, no contexto das ações de mitigação sobre mudanças do clima.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-14" class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-14">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Até 2025, prevenir e reduzir significativamente a poluição marinha de todos os tipos, especialmente a advinda de atividades terrestres.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-15" class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-15">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Promover a gestão sustentável de todos os tipos de florestas, deter o desmatamento e restaurar florestas.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-16" class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-16">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Até 2030, reduzir significativamente os fluxos financeiros e de armas ilegais, reforçar a devolução de recursos roubados e combater todas as formas de crime organizado.​</p>
+        </div>
+      </div>
+      <div class="row bordinha rounded-2 m-2">
+        <div class="col-12 col-md-4 text-center">
+          <button type="button" id="alternativa-17"  class="btn-objetivo btn sem-fundo tamBtnObj p-2 escolha" data-bs-toggle="modal" data-bs-target="#modal-17">
+            <img src="assets/img/tente.png"  class="img-fluid rounded-2" alt="">
+          </button>
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-4">Fazer países desenvolvidos implementarem os seus compromissos em matéria de assistência oficial ao desenvolvimento, inclusive fornecendo aos países em desenvolvimento 0,7% de sua renda nacional bruta.​</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modais feedback -->
+    <div class="modal fade" id="modal-errou" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header headerErrouObjetivo">
+            <h5 class="modal-title" id="exampleModalLabel">Tente novamente!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Você selecionou a opção incorreta. Revise e tente novamente.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-acertou" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header headerAcertouObjetivo">
+            <h5 class="modal-title" id="exampleModalLabel">Você acertou!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Parabéns! Você identificou corretamente os objetivos de desenvolvimento sustentável de acordo com o que estamos estudando! Lembre-se de que todos esses objetivos fazem parte, de alguma maneira, dessa discussão transversal sobre políticas de preservação ambiental e as ciências da natureza.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+  <script src="/assets/js/script-complete-objetivos.js"></script>
+
+</body>
+
+</html>

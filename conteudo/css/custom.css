@@ -355,11 +355,11 @@ ul.check li{
     transform: scale(1.1);
 }
 .pg2 .card-peq{
-    width: 337px;
-    height: 155px;
+    width: 335px;
+    height: 176px;
     margin-bottom: 20px;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
 }
 .pg2 .card-peq.bg1{background: url('../img/pg2/quadro2.png') no-repeat;}
 .pg2 .card-peq.bg2{background: url('../img/pg2/quadro1.png') no-repeat;}
@@ -538,6 +538,27 @@ ul.check li{
     margin-top: 20px;
 }
 
+.btn-tratamento_agua{
+    display: block;
+    margin: 20px auto;
+    border: #009ca8 solid 2px;
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+}
+.btn-ervilhas{
+    display: block;
+    margin: 40px auto 5px auto;
+    border: #009ca8 solid 2px;
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.painel-icones{
+    width: 100%;
+}
+
 @media screen and (max-width: 1480px){
     .pg2 .voltar-topo{
         left: 4%;
@@ -595,6 +616,11 @@ ul.check li{
     .destaque{
         padding-top: 60px;
     }
+
+    .painel-icones{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -609,5 +635,9 @@ ul.check li{
     .video-youtube{
         width: 320px;
         height: 180px;
+    }
+
+    .painel-icones{
+        width: 100%;
     }
 }
