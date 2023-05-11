@@ -646,6 +646,14 @@ header.titulo-conteudo .container{
         width: 80%;
         margin: 0 auto;
     }
+
+    .img-remedios{
+        display: none;
+    }
+
+    .pagina.pg2.pg2_2{
+        padding-top: 0px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -664,5 +672,15 @@ header.titulo-conteudo .container{
 
     .painel-icones{
         width: 100%;
+    }
+
+    #menu-medicamentos{
+        padding-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #menu-medicamentos h3{
+        font-size: 24px;
     }
 }
